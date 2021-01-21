@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Nhap so tien muon gui ngan hang!<br>
+    <button onclick="tinh_lai();">Click</button>
+    <script>
+        function tinh_lai(){
+            var tien_goc= +prompt('So tien goc la:');
+            var nam= +prompt('So nam muon gui ngan hang la:');
+            var tien_lai= tien_goc * 6.9/100 * nam;
+            tien_nhan = tien_goc + tien_lai;
+            alert('Tien nhan sau '+nam+' nam gui ngan hang la: '+ tien_nhan);
+        }
+    </script>
+</body>
+</html>
